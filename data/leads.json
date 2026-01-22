@@ -1,0 +1,160 @@
+[
+  {
+    "id": "gymshark",
+    "name": "Gymshark",
+    "website": "https://gymshark.com",
+    "hq": "Solihull, West Midlands, England",
+    "industry": "Fitness apparel & accessories",
+    "founded": 2012,
+    "employees": 850,
+    "products": [
+      "Sportswear",
+      "Athleisure"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "glossier",
+    "name": "Glossier",
+    "website": "https://www.glossier.com",
+    "hq": "United States",
+    "industry": "Beauty / Skincare",
+    "founded": 2014,
+    "employees": null,
+    "products": [
+      "Skincare",
+      "Makeup",
+      "Body care",
+      "Fragrance"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "allbirds",
+    "name": "Allbirds",
+    "website": "https://www.allbirds.com",
+    "hq": "San Francisco, California, USA",
+    "industry": "Footwear & apparel",
+    "founded": 2015,
+    "employees": 542,
+    "products": [
+      "Footwear",
+      "Apparel"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "warby-parker",
+    "name": "Warby Parker",
+    "website": "https://www.warbyparker.com",
+    "hq": "New York City, USA",
+    "industry": "Eyewear retail",
+    "founded": 2010,
+    "employees": 3780,
+    "products": [
+      "Prescription glasses",
+      "Sunglasses",
+      "Contact lenses"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "away",
+    "name": "Away",
+    "website": "https://www.awaytravel.com",
+    "hq": "New York City, USA",
+    "industry": "Travel goods retail",
+    "founded": 2015,
+    "employees": 200,
+    "products": [
+      "Baggage",
+      "Travel accessories"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "casper",
+    "name": "Casper",
+    "website": "https://casper.com",
+    "hq": "New York City, USA",
+    "industry": "Mattresses / Sleep products",
+    "founded": 2014,
+    "employees": null,
+    "products": [
+      "Mattresses",
+      "Bedding",
+      "Sleep accessories"
+    ],
+    "notes": [],
+    "extra": {
+      "Contact Email": "info@casper.com"
+    }
+  },
+  {
+    "id": "bombas",
+    "name": "Bombas",
+    "website": "https://bombas.com",
+    "hq": "New York City, USA",
+    "industry": "Apparel (DTC)",
+    "founded": 2013,
+    "employees": null,
+    "products": [
+      "Socks",
+      "Apparel"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "everlane",
+    "name": "Everlane",
+    "website": "https://www.everlane.com",
+    "hq": "San Francisco, California, USA",
+    "industry": "Clothing retail (DTC)",
+    "founded": 2011,
+    "employees": null,
+    "products": [
+      "Clothing",
+      "Shoes",
+      "Accessories"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "patagonia",
+    "name": "Patagonia",
+    "website": "https://www.patagonia.com",
+    "hq": "Ventura, California, USA",
+    "industry": "Outdoor apparel",
+    "founded": 1973,
+    "employees": 3000,
+    "products": [
+      "Outdoor clothing",
+      "Equipment"
+    ],
+    "notes": [],
+    "extra": {}
+  },
+  {
+    "id": "lush",
+    "name": "Lush",
+    "website": "https://www.lush.com",
+    "hq": "Poole, England",
+    "industry": "Cosmetics retail",
+    "founded": 1994,
+    "employees": null,
+    "products": [
+      "Skincare",
+      "Soaps",
+      "Bath & body"
+    ],
+    "notes": [],
+    "extra": {}
+  }
+]
