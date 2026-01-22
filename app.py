@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from agent import run_agent, task_account_brief, task_first_outreach, task_followup_plan, task_web_lead_search
 from storage import load_leads, save_leads, create_lead, update_lead, add_note, delete_lead
 
 st.set_page_config(page_title="OVRSEA Leads", layout="wide")
@@ -249,19 +250,6 @@ elif st.session_state.page == "Lead Detail":
     st.write("**Extra fields**")
     st.json(selected.get("extra") or {})
 
-
-
-    st.markdown("### Actions (agent hooks)")
-    st.caption("Placeholders you can connect to an LLM during the interview.")
-    a1, a2, a3 = st.columns(3)
-    if a1.button("Generate Account Brief"):
-        st.info("Hook: call LLM → write output to extra['accountBrief']")
-    if a2.button("Draft Outreach Email"):
-        st.info("Hook: call LLM → write output to extra['outreachEmail']")
-    if a3.button("Create Follow-up Plan"):
-        st.info("Hook: call LLM → write output to extra['followUpPlan']")
-
-
 # ============================
 # PAGE: ADD LEAD
 # ============================
@@ -297,3 +285,32 @@ else:
                 st.session_state.page = "Lead Detail"
                 st.success(f"Created lead: {new['name']}")
                 st.rerun()
+
+st.divider()
+st.markdown("### Agent actions")
+
+a1, a2, a3, a4 = st.columns(4)
+
+if a1.button("Generate account brief"):
+    text, _ = run_agent(leads, selected, task_account_brief(selected))
+    save_leads(leads)
+    st.success("Done.")
+    st.write(text)
+
+if a2.button("Draft first outreach"):
+    text, _ = run_agent(leads, selected, task_first_outreach(selected))
+    save_leads(leads)
+    st.success("Done.")
+    st.write(text)
+
+if a3.button("Create follow-up plan"):
+    text, _ = run_agent(leads, selected, task_followup_plan(selected))
+    save_leads(leads)
+    st.success("Done.")
+    st.write(text)
+
+if a4.button("Search the Web for the lead"):
+    text, _ = run_agent(leads, selected, task_web_lead_search(selected))
+    save_leads(leads)
+    st.success("Done.")
+    st.write(text)
